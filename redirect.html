@@ -12,13 +12,17 @@ alert("Testing")
 if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
     window.location = "https://itunes.apple.com/my/app/infineon-products/id602610974?mt=8";
 }
+//Xiomi version
+else if (navigator.userAgent.match(/mi/i)) {
+    window.location = "http://app.mi.com/details?id=com.mavenlab.infineon";
+}
+//OPPO - TBD
 //Android Version:
 else if(navigator.userAgent.match(/android/i)) {
     window.location = "https://shouji.baidu.com/software/24610198.html";
 }else {
     window.location = "https://shouji.baidu.com/software/24610198.html";
-}
-                     
+}               
 </script>
 </body>
 </html>
