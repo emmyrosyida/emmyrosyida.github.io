@@ -6,10 +6,10 @@ self.addEventListener('install', function(e) {
        '/pwa/a2hs/index.html',
        '/pwa/a2hs/index.js',
        '/pwa/a2hs/style.css',
-       '/pwa/a2hs/images/fox1.jpg',
-       '/pwa/a2hs/images/fox2.jpg',
-       '/pwa/a2hs/images/fox3.jpg',
-       '/pwa/a2hs/images/fox4.jpg'
+       '/pwa/a2hs/images/yellow.jpg',
+       '/pwa/a2hs/images/green.jpg',
+       '/pwa/a2hs/images/pink.jpg',
+       '/pwa/a2hs/images/blue.jpg'
      ]);
    })
  );
