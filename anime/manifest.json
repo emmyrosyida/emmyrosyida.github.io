@@ -2,7 +2,7 @@
     "name": "PWA from scratch",
     "short_name": "PWA from 0",
     "lang": "en",
-    "start_url": "/anime",
+    "start_url": "/anime/",
     "display": "fullscreen",
     "theme_color": "#c2f442",
     "icons": [
