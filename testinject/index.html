@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>InAppBrowser.show Example</title>
-
+<script type="text/javascript" src="**injection**www/cordova.js"></script>
     Test master
 	
 <button onclick="set()">Click me</button>
@@ -10,9 +10,9 @@
 <p id="header"><img id="test" src="smiley.gif" alt="Smiley face" height="42" width="42"></p>
 
 <script>
-function myFunction() {
-  
-}
+ document.addEventListener("deviceready", function() {
+          document.write("Now you can use plugins"); 
+      }, false);
 </script>
 
   </head>
