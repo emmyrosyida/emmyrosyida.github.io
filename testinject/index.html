@@ -1,36 +1,60 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1,
+      shrink-to-fit=no">
     <title>InAppBrowser.show Example</title>
-<!-- <script type="text/javascript" src="**injection**www/cordova.js"></script> -->
-<script src="https://emmyrosyida.github.io/testinject/cdvfile/bundle/www/cordova.js" ></script>
-<script src="/cdvfile/bundle/www/cordova.js"></script>
+    <!-- <script type="text/javascript" src="**injection**www/cordova.js"></script> -->
+    <script src="/cdvfile/bundle/www/cordova.js"></script>
+    <script>
+      document.addEventListener(
+        "deviceready",
+        function() {
+          alert("Now you can use plugins");
+        },
+        false
+      );
 
-    Test master
-	
-<button onclick="set()">Click me</button>
-
-<script>
- document.addEventListener("deviceready", function() {
-          alert("Now you can use plugins"); 
-      }, false);
-
-  function set(){
-    cordova.plugins.barcodeScanner.scan(
-      function (result) {
-          alert("We got a barcode\n" +
-                "Result: " + result.text + "\n" +
-                "Format: " + result.format + "\n" +
-                "Cancelled: " + result.cancelled);
-      },
-      function (error) {
-          alert("Scanning failed: " + error);
+      function set() {
+        cordova.plugins.barcodeScanner.scan(
+          function(result) {
+            alert(
+              "We got a barcode\n" +
+                "Result: " +
+                result.text +
+                "\n" +
+                "Format: " +
+                result.format +
+                "\n" +
+                "Cancelled: " +
+                result.cancelled
+            );
+          },
+          function(error) {
+            alert("Scanning failed: " + error);
+          }
+        );
       }
-   );
-  }
-</script>
+    </script>
+        <link rel="stylesheet" href="web-component.css" />
 
   </head>
-  <body>
+  <body>        
+    <main role="main">
+      <div class="jumbotron">
+          <h1 class="display-4">MTS Mobile</h1>
+          <p class="lead">Example for cordova integration.
+          </p>
+      </div>
+      <div class="container">
+          <div class="card text-center" style="width: 21.5em;margin:0 auto;background-color:white; border: 0px ">
+              <div class="card-body">
+                  <h4 class="card-title">::Example::</h4>
+                  <button onclick="set()" class="btn btn-primary btn-lg">Start Scanning</button>
+                </div>
+          </div>
+      </div>
+      <br><br>
+  </main>
   </body>
 </html>
