@@ -3,19 +3,19 @@
 }
 
 #title{
-    background-color: #08d9d6;
+    background-color: #155263;
     color: white; 
+  
 }
 
 h1{
-    font-family: 'Montserrat', sans-serif;
     font-weight: 900; /* black */
     font-size: 3.2rem;
     line-height: 1.5; 
 }
 
 .container-fluid{
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
 }
 
 .navbar-brand{
@@ -43,13 +43,42 @@ h1{
 
 #features{
     text-align: center;
-    margin-top: 5%;
+    padding: 10% ;
+    background-color: white;
+    position: relative;
 }
 
 .title-img{
-    width:  60%;
+    /* width:  60%; */
     transform: rotate(25deg);
+    right: 10%;
+    margin-top: -5%;
+    position: absolute;
 }
+
+@media (max-width: 1057px){
+    .title-img{
+        /* width:  60%; */
+        transform: rotate(0deg);
+        right: 10%;
+        margin-top: -5%;
+        position: static;
+    }
+    #title{
+        /* width:  60%; */
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 1000px) and  (max-width: 1200px){
+    .title-img{
+        /* width:  60%; */
+        transform: rotate(0deg);
+       
+    }
+}
+
 
 h3{
     margin: 20px;
@@ -58,13 +87,80 @@ h3{
 }
 
 .fe{
-    color: #ff2e63;
+    color: #ff6f3c;
 }
 
 .fe:hover{
-    color: #08d9d6;
+    color: #ff9a3c;
 }
 
 p{
     color: #8f8f8f;
+}
+
+#testimonials{
+    font-family: "Montserrat";
+    padding: 10% ;
+    text-align: center;
+    background-color: #ff6f3c;
+    color: white;
+}
+
+h2{
+    font-weight: 600;
+    font-size: 2rem;
+
+}
+
+.pf-pic{
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+#press{
+    padding-top: 10%;
+    margin: auto ;
+}
+
+.presspic{
+    padding: 5px;
+    width: 23%;
+}
+
+.picdiv{
+    padding-top: 30px;
+}
+
+footer{
+    padding: 1%;
+    background-color: #155263;
+    text-align: center;
+    color: white !important;
+    padding: 7% 15%;
+}
+
+#pricing{
+    text-align: center;
+    padding: 10% ;
+}
+
+#cta{
+    text-align: center;
+    padding: 10% ;
+    background-color: #ffc93c;
+}
+
+.test{
+   margin: 10px ;
+   padding: 2% 20%;
+}
+
+.aa{
+    padding: 0px 10px;
+}
+
+.card1{
+    margin-bottom: 50px;
 }
