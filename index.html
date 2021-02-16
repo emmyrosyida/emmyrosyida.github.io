@@ -1,83 +1,280 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>about.emmy</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.ico" />
 
-<head>
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="vendor/bootstrap-4.3.1-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/2b8307e710.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>emmy.home</title>
-
-  <!-- Bootstrap Core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom Fonts -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-
-  <!-- Custom CSS -->
-  <link href="css/stylish-portfolio.css" rel="stylesheet">
-
-</head>
-
-<body id="page-top">
-
-
-  <!-- Header -->
-  <header class="masthead d-flex">
-    <div class="container text-center my-auto" 
-    style="margin-top: auto!important;
-    background-color: black;
-    opacity: 0.70;
-    padding: 15px;
-    border-radius: 30px;
-    color: white;
-    font-family: 'Trebuchet MS', Helvetica, sans-serif;">
-      <h1 class="mb-1">Comeback soon!</h1>
-      <h5 class="mb-5">
-        <em>Hey! Welocme to my page. Please come again later, I have ton of things to share but I need a bit of time to provide the best site for you! Do comeback soon!</em>
-      </h5>
-      <i>- Emmy Alistair</i>
-      </div>
-    <div class="overlay"></div>
-  </header>
-
-  <!-- Footer -->
-  <footer class="footer text-center">
-    <div class="container">
-      <ul class="list-inline mb-5">
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/emmyrosyida/">
-            <i class="icon-social-linkedin"></i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white" href="https://github.com/emmyrosyida/">
-            <i class="icon-social-github"></i>
-          </a>
-        </li>
-      </ul>
-      <p class="text-muted small mb-0">Copyright &copy; EmmyAlistair 2019</p>
+  <body>
+    <div id="loading">
+      <img
+        id="loading-image"
+        src="images/loading.gif"
+        alt="Wait for it."
+        width="30"
+      />
     </div>
-  </footer>
 
-  <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
+    <header>
+      <div class="collapse bg-light" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">About</h4>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Contact</h4>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                <li><a href="#" class="text-white">Like on Facebook</a></li>
+                <li><a href="#" class="text-white">Email me</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <a class="navbar-brand" href="https://emmyrosyida.github.io/">
+          <img
+            src="images/icon.png"
+            width="30"
+            height="30"
+            class="d-inline-block align-top"
+            alt=""
+          />
+          <span class="page-title">Emmy's Profile</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#aboutme"
+                >About Me<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skill">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <section class="text-center">
+      <div class="top-container">
+        <div class="title-text">
+          <h1 class="display-2">Hi, I'm Emmy.</h1>
+          <h2>a <span class="pro">pro</span>grammer.</h2>
+        </div>
+      </div>
+    </section>
 
-  <!-- Custom scripts for this template -->
-  <script src="js/stylish-portfolio.min.js"></script>
+    <div class="container">
+      <div class="row light-box" id="aboutme">
+        <div class="col-md-12">
+          <div class="profile">
+            <h2>About me</h2>
+            <hr />
+            <img
+              src="images/emmy.jpeg"
+              alt="emmy-profile-img"
+              class="profile-img"
+            />
+            <p class="text-center font-italic">
+              "Optimistic. Strive for excellence. Tawakal."
+            </p>
+            <p class="intro text-justify">
+              My name is <span class="highlight">Emmy Rosyida</span>. An
+              Information Technology graduate from International Islamic
+              University of Malaysia (IIUM).
+            </p>
+            <p class="intro text-justify">
+              Experience in various programming task for almost three years.
+              Skills include
+              <span class="highlight"
+                >web and mobile programming, concept design, analytical thinking
+                and critical problem solving</span
+              >. Most importantly, I am able to adapt to most programming tasks
+              depend on the job scope and demand.
+            </p>
+          </div>
+        </div>
+      </div>
 
-</body>
+      <div class="row dark-box" id="skill">
+        <div class="col-md-12">
+          <div class="skills">
+            <h2>My Skills.</h2>
+            <hr />
+            <div class="skill-row">
+              <i class="fas fa-laptop right-img blue"></i>
+              <h3>Web Development</h3>
+              <p class="text-justify">
+                I started learning to code when I was in foundation study at
+                IIUM. It was the most beautiful language of all, C++.😅 I fall
+                in love with programming since then and never bored of it till
+                now. Then, I started to
+                <span class="highlight"
+                  >explore various kind of knowledge in web/mobile design and
+                  development</span
+                >. That was my best decision that I had ever made.
+              </p>
+            </div>
+            <div class="skill-row">
+              <i class="fas fa-blender-phone left-img blue"></i>
+              <h3>Mobile Development</h3>
+              <p class="text-justify">
+                I started with mobile development during my Final Year Porject
+                which was on online shopping mobile app. It was a great idea
+                back then. From there, now I am able to do the
+                <span class="highlight"
+                  >development on hybrid (Cordova), Swift and Android</span
+                >. It is a very fun skills, I must say.
+              </p>
+            </div>
+            <div class="skill-row">
+              <i class="fas fa-code right-img blue"></i>
+              <h3>Fullstack Development</h3>
+              <p class="text-justify">
+                I admit, there are tons of programming languages/framework out
+                there to be explored, but believe me, if you know the roots of
+                web/mobile programming concept, you can grasp it at any time.
+                Also, I had work for fullstack for both mobile and web
+                environment. Thus,
+                <span class="highlight"
+                  >frontend and backend development is something that always
+                  keep me interested</span
+                >.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="row light-box" id="contact">
+        <div class="col-md-12">
+          <div class="contact-row">
+            <h2>Get In Touch</h2>
+            <h3>Want to get to know better?</h3>
+            <p class="contact-message">
+              Drop me a line, I would be gladly be at your assistance.
+            </p>
+            <a
+              href="mailto: emmyrosyida@gmail.com"
+              type="button"
+              class="btn btn-lg btn-outline-primary contact-btn"
+            >
+              Contact me
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="bottom-container">
+            <a
+              class="footer-link"
+              target="_blank"
+              href="https://www.linkedin.com/in/emmyrosyida/"
+            >
+              <i class="fab fa-linkedin p-2"></i>LinkedIn</a
+            >
+            <a
+              class="footer-link"
+              target="_blank"
+              href="https://github.com/emmyrosyida"
+            >
+              <i class="fab fa-github p-2"></i>Github</a
+            >
+            <!-- <a
+              class="footer-link"
+              target="_blank"
+              href="https://emmyrosyida.github.io/"
+            >
+              <img src="favicon.ico" class="blog-icon" alt="" /> My Blog</a
+            > -->
+            <p class="copyright">© 2021 Emmy Rosyida . emmyrosyida.github.io</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a id="back2Top" title="Back to top" href="#"
+      ><i class="fas fa-angle-right p-2"></i
+    ></a>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="vendor/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="vendor/bootstrap-4.3.1-dist/js/bootstrap.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/@popperjs/core@2"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.onload = function () {
+        document.getElementById("loading").style.display = "none";
+      };
+
+      /*Scroll to top when arrow up clicked BEGIN*/
+      $(window).scroll(function () {
+        var height = $(window).scrollTop();
+        if (height > 100) {
+          $("#back2Top").fadeIn();
+        } else {
+          $("#back2Top").fadeOut();
+        }
+      });
+      $(document).ready(function () {
+        $("#back2Top").click(function (event) {
+          event.preventDefault();
+          $("html, body").animate({ scrollTop: 0 }, "slow");
+          return false;
+        });
+      });
+      /*Scroll to top when arrow up clicked END*/
+    </script>
+  </body>
 </html>
